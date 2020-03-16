@@ -1,0 +1,27 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+name = sou
+email = sou@abridge-co.jp
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+[alias]
+    s = status
+    st = status
+    l = log
+    lg = log
+    df = diff
+    ch = checkout
+    cb = checkout -b
+    br = branch
+    rb = rebase -i
+    sta = stash
+    ignore = update-index --assume-unchanged
+    cm = commit -m
+[color]
+	diff = auto
+	status = auto
+	branch = auto
